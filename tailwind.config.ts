@@ -7,8 +7,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // Mode JIT pour une compilation plus rapide
-  mode: "jit",
   theme: {
     extend: {
       animation: {
@@ -37,6 +35,10 @@ const config: Config = {
           card: "#1A1E2E", // Couleur des cartes
           border: "#2A3042", // Couleur des bordures
         },
+        // Ajout de couleurs avec noms spécifiques pour Tailwind
+        "background-dark": "#080A0F",
+        "background-card": "#1A1E2E",
+        "background-border": "#2A3042",
       },
     },
   },

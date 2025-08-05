@@ -1,0 +1,72 @@
+/* 
+ * Fichier pour forcer la génération des classes Tailwind personnalisées sur Vercel
+ * Ces classes seront incluses dans le build final
+ */
+
+/* Classes de couleurs personnalisées utilisées dans l'app */
+.bg-background-dark {
+  background-color: #080a0f;
+}
+
+.bg-background-card {
+  background-color: #1a1e2e;
+}
+
+.border-background-border {
+  border-color: #2a3042;
+}
+
+.text-primary {
+  color: #4a90e2;
+}
+
+.text-secondary {
+  color: #e85d04;
+}
+
+.bg-primary {
+  background-color: #4a90e2;
+}
+
+.bg-secondary {
+  background-color: #e85d04;
+}
+
+/* Classes d'animation personnalisées */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Classes utilitaires */
+.glass-effect {
+  background-color: rgb(255 255 255 / 0.07);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.glass-card {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.text-gradient {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #e85d04, #ff7a1f);
+}
+
+.bg-motif {
+  background-color: #080a0f;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%233c1b02' fill-opacity='0.30'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}

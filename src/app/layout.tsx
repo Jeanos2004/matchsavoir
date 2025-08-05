@@ -1,12 +1,13 @@
-
 import type { Metadata } from "next";
 import "./globals.css";
+import "../styles/tailwind-force.css";
 import NavigationMenu from "@/components/Layout/NavigationMenu";
 import Footer from "@/components/Layout/Footer";
 
 export const metadata: Metadata = {
   title: "MatchSavoir | Mise en relation formateurs et apprenants",
-  description: "Plateforme de mise en relation entre formateurs et apprenants pour un apprentissage personnalisé et efficace.",
+  description:
+    "Plateforme de mise en relation entre formateurs et apprenants pour un apprentissage personnalisé et efficace.",
 };
 
 export default function RootLayout({
