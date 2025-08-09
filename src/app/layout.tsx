@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "../styles/tailwind-force.css";
 import NavigationMenu from "@/components/Layout/NavigationMenu";
 import Footer from "@/components/Layout/Footer";
 
