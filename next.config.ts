@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
     domains: ["images.unsplash.com"],
     unoptimized: false,
   },
+  // Désactive l'optimisation CSS pour le débogage
+  experimental: {
+    optimizeCss: false,
+  },
 };
 
 export default nextConfig;
