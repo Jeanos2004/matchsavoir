@@ -1,12 +1,16 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  // Active le mode JIT pour une meilleure performance
+  mode: 'jit',
+  // Important: spécifiez les chemins de vos composants
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // Désactive le préfixe 'tw-' pour les classes utilitaires
+  prefix: "",
   theme: {
     extend: {
       animation: {
@@ -43,6 +47,12 @@ const config: Config = {
     },
   },
   plugins: [],
+  // Important: Désactive le préfixe par défaut
+  important: false,
+  // Désactive les styles de base pour éviter les conflits
+  corePlugins: {
+    preflight: true,
+  },
 };
 
 export default config;
